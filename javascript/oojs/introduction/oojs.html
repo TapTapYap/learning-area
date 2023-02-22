@@ -12,18 +12,23 @@
   </body>
 
     <script>
-      const person = {
-        name: {
-          first: "Bob",
-          last: "Smith",
-        },
-        age: 32,
-        bio() {
-          console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
-        },
-        introduceSelf() {
-          console.log(`Hi! I'm ${this.name[0]}.`);
-        },
-      };
+let bandObj = {};
+    
+    bandObj.name = "bork";
+    bandObj.nationality = "german";
+    bandObj.genre = "rock";
+    bandObj.members = 4;
+    bandObj.formed = 1993;
+    bandObj.split = "false";
+    bandObj.albums = [];
+    let borked = {
+      name: "borking",
+      released: 2001,
+    };
+    let borked2 = {
+      name: "borking2",
+      released: 2002,
+    };
+    bandObj.albums.push(borked, borked2);
     </script>
 </html>
